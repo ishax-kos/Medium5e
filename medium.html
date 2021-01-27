@@ -5,9 +5,13 @@
 	<link rel="stylesheet" href="style_dnd.css">
 </head>
 <body onresize="adjust()"> 
-	<div class="menuChapter menuSide"> <div id=navList> </div> </div>
-	<div class="addIssue menuSide">
-	Feel free to <a id=suggestions href=https://github.com/ishax-kos/Medium5e/issues/new/choose>make a suggestion</a>! I'm not perfect. I don't want to outshine warlock entirely if I can help it.
+<div id=menus>
+	<div class="menuChapter menuSide"> 
+        <div id=navList> </div> 
+    </div>
+    <p class="addIssue menuSide">
+        Feel free to <a id=suggestions href=https://github.com/ishax-kos/Medium5e/issues/new/choose>make a suggestion</a>! I'm not perfect. I don't want to outshine warlock entirely if I can help it.
+    </p>
 </div>
 <div class=page>
 <h1 id=Medium class=title>Medium</h1>
@@ -309,6 +313,8 @@
 </div>
 
 </div>
-<script src= "script.js" ></script>
+<script src= "script.js" >
+	$( "#menus" ).load( "panels.html #panels" );
+</script>
 </body>
 </html>

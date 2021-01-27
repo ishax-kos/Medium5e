@@ -12,13 +12,15 @@ function adjust() {
 		//size = 0;
 	}
 	else {
-		size -= 18;
+		size *= 0.99;
+		size -= 18.0;
 	}
 	
-	document.querySelector(".menuSide").style.cssText = (
-		"width: "+ (size) +"px; visibility:"+ vis +";"
-	);
-	//requestAnimationFrame(adjust);
+	for (item of document.querySelectorAll(".menuSide")) {
+		item.style.cssText = (
+			"width: "+ (size) +"px; visibility:"+ vis +";"
+		);
+	}
 } adjust();
 
 var headings = document.querySelectorAll("h1,h2,h3,h4");
@@ -37,3 +39,4 @@ for (i = 0; i < headings.length; i++) {
 		+"</"+ headings[i].tagName +"></a>";
 	}
 }
+
