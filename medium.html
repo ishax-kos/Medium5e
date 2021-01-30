@@ -1,17 +1,18 @@
 <html>
 <head>
-	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <meta name="keywords" content="s">
-	<link rel="stylesheet" href="style_dnd.css">
+    <link rel="stylesheet" href="style_dnd.css">
+	<script src="jquery-3.5.1.min.js"></script>
 </head>
-<body onresize="adjust()"> 
+<body onresize="adjust()">
 <div id=menus>
-	<div class="menuChapter menuSide"> 
-        <div id=navList> </div> 
+    <!-- <div class="menuChapter menuSide"> 
+        <div id=navList></div>
     </div>
     <p class="addIssue menuSide">
         Feel free to <a id=suggestions href=https://github.com/ishax-kos/Medium5e/issues/new/choose>make a suggestion</a>! I'm not perfect. I don't want to outshine warlock entirely if I can help it.
-    </p>
+    </p> -->
 </div>
 <div class=page>
 <h1 id=Medium class=title>Medium</h1>
@@ -19,81 +20,81 @@
 <p class=titlenote>You must have a Constitution and Wisdom score of 13 or higher in order to multiclass in or out of this class.</p>
 
 <table class="mainTable wideCell3">
-	<thead>
-		<tr/> <th colspan=8>The Medium </tr>
-		<tr/> <th scope=col/>Level <th scope=col/>Proficiency Bonus <th scope=col/>Features <th scope=col/>Ability Bonus <th scope=col/>Cantrips Known <th scope=col/>Spells Known <th scope=col/>Spell Level<th scope=col/>Rites Enacted
-	</thead>
-	<tbody>
-		<tr/> <th/>1st <td/>+2 <td/>Spell Casting, Spiritual Discipline, Channeling
-		 <td/>+2 <td/>2 <td/>0 <td/>1st <td/>-
-		<tr/> <th/>2nd <td/>+2 <td/>Taboo 
-		 <td/>+2 <td/>2 <td/>1 <td/>1st <td/>-
-		<tr/> <th/>3rd <td/>+2 <td/>The Third Eye 
-		 <td/>+2 <td/>2 <td/>2 <td/>2nd <td/>1
-		<tr/> <th/>4th <td/>+2 <td/>Ability Score Improvement 
-		 <td/>+2 <td/>3 <td/>2 <td/>2nd <td/>1
-		<tr/> <th/>5th <td/>+3 <td/>
-		<td/>+2 <td/>3 <td/>3 <td/>3rd <td/>2
-		<tr/> <th/>6th <td/>+3 <td/>Spiritual Discipline Feature
-		<td/>+2 <td/>3 <td/>4 <td/>3rd <td/>2
-		<tr/> <th/>7th <td/>+3 <td/>
-		<td/>+2 <td/>3 <td/>5 <td/>4th <td/>3
-		<tr/> <th/>8th <td/>+3 <td/>Ability Score Improvement
-		<td/>+2 <td/>3 <td/>5 <td/>4th <td/>3
-		<tr/> <th/>9th <td/>+4 <td/>
-		<td/>+3 <td/>3 <td/>6 <td/>5th <td/>4
-		<tr/> <th/>10th <td/>+4 <td/>Spiritual Discipline Feature
-		<td/>+3 <td/>4 <td/>7 <td/>5th <td/>4
-		<tr/> <th/>11th <td/>+4 <td/>
-		<td/>+3 <td/>4 <td/>8 <td/>6th <td/>5
-		<tr/> <th/>12th <td/>+4 <td/>Ability Score Improvement
-		<td/>+3 <td/>4 <td/>8 <td/>6th <td/>5
-		<tr/> <th/>13th <td/>+5 <td/>
-		<td/>+4 <td/>4 <td/>9 <td/>7th <td/>6
-		<tr/> <th/>14th <td/>+5 <td/>Spiritual Discipline Improvement
-		<td/>+4 <td/>4 <td/>10 <td/>7th <td/>6
-		<tr/> <th/>15th <td/>+5 <td/>
-		<td/>+4 <td/>4 <td/>11 <td/>8th <td/>7
-		<tr/> <th/>16th <td/>+5 <td/>Ability Score Improvement
-		<td/>+4 <td/>4 <td/>11 <td/>8th <td/>7
-		<tr/> <th/>17th <td/>+6 <td/>
-		<td/>+4 <td/>4 <td/>12 <td/>9th <td/>8
-		<tr/> <th/>18th <td/>+6 <td/>
-		<td/>+4 <td/>4 <td/>13 <td/>9th <td/>8
-		<tr/> <th/>19th <td/>+6 <td/>Ability Score Improvement
-		<td/>+4 <td/>4 <td/>14 <td/>9th <td/>8
-		<tr/> <th/>20th <td/>+6 <td/>
-		<td/>+4 <td/>4 <td/>14 <td/>9th <td/>8
-	</tbody>
+    <thead>
+        <tr/> <th colspan=8>The Medium </tr>
+        <tr/> <th scope=col/>Level <th scope=col/>Proficiency Bonus <th scope=col/>Features <th scope=col/>Ability Bonus <th scope=col/>Cantrips Known <th scope=col/>Spells Known <th scope=col/>Spell Level<th scope=col/>Rites Enacted
+    </thead>
+    <tbody>
+        <tr/> <th/>1st <td/>+2 <td/>Spell Casting, Spiritual Discipline, Channeling
+         <td/>+2 <td/>2 <td/>0 <td/>1st <td/>-
+        <tr/> <th/>2nd <td/>+2 <td/>Taboo 
+         <td/>+2 <td/>2 <td/>1 <td/>1st <td/>-
+        <tr/> <th/>3rd <td/>+2 <td/>The Third Eye 
+         <td/>+2 <td/>2 <td/>2 <td/>2nd <td/>1
+        <tr/> <th/>4th <td/>+2 <td/>Ability Score Improvement 
+         <td/>+2 <td/>3 <td/>2 <td/>2nd <td/>1
+        <tr/> <th/>5th <td/>+3 <td/>
+        <td/>+2 <td/>3 <td/>3 <td/>3rd <td/>2
+        <tr/> <th/>6th <td/>+3 <td/>Spiritual Discipline Feature
+        <td/>+2 <td/>3 <td/>4 <td/>3rd <td/>2
+        <tr/> <th/>7th <td/>+3 <td/>
+        <td/>+2 <td/>3 <td/>5 <td/>4th <td/>3
+        <tr/> <th/>8th <td/>+3 <td/>Ability Score Improvement
+        <td/>+2 <td/>3 <td/>5 <td/>4th <td/>3
+        <tr/> <th/>9th <td/>+4 <td/>
+        <td/>+3 <td/>3 <td/>6 <td/>5th <td/>4
+        <tr/> <th/>10th <td/>+4 <td/>Spiritual Discipline Feature
+        <td/>+3 <td/>4 <td/>7 <td/>5th <td/>4
+        <tr/> <th/>11th <td/>+4 <td/>
+        <td/>+3 <td/>4 <td/>8 <td/>6th <td/>5
+        <tr/> <th/>12th <td/>+4 <td/>Ability Score Improvement
+        <td/>+3 <td/>4 <td/>8 <td/>6th <td/>5
+        <tr/> <th/>13th <td/>+5 <td/>
+        <td/>+4 <td/>4 <td/>9 <td/>7th <td/>6
+        <tr/> <th/>14th <td/>+5 <td/>Spiritual Discipline Improvement
+        <td/>+4 <td/>4 <td/>10 <td/>7th <td/>6
+        <tr/> <th/>15th <td/>+5 <td/>
+        <td/>+4 <td/>4 <td/>11 <td/>8th <td/>7
+        <tr/> <th/>16th <td/>+5 <td/>Ability Score Improvement
+        <td/>+4 <td/>4 <td/>11 <td/>8th <td/>7
+        <tr/> <th/>17th <td/>+6 <td/>
+        <td/>+4 <td/>4 <td/>12 <td/>9th <td/>8
+        <tr/> <th/>18th <td/>+6 <td/>
+        <td/>+4 <td/>4 <td/>13 <td/>9th <td/>8
+        <tr/> <th/>19th <td/>+6 <td/>Ability Score Improvement
+        <td/>+4 <td/>4 <td/>14 <td/>9th <td/>8
+        <tr/> <th/>20th <td/>+6 <td/>
+        <td/>+4 <td/>4 <td/>14 <td/>9th <td/>8
+    </tbody>
 </table>
 <h2>Class Features</h2>
 <h4>Health</h4>
 <div class=hiddenList>
-	<ul>
-		<li/>Hit Points
-		<li/>Hit Dice: 1d8 per Medium level
-		<li/>Hit Points at 1st Level: 8 + your Constitution modifier
-		<li/>Hit Points at Higher Levels: 1d8 (or 5) + your Constitution modifier per Medium level after 1st
-	</ul>
-	<h4>Proficiencies</h4>
-	<ul>
-		<li/>Armor: Light armor, Medium armor
-		<li/>Weapons: All simple weapons, One martial weapon of 1d6 damage or less
-		<li/>Tools: None
-		<li/>Saving Throws: Wisdom, Constitution
-		<li/>Skills: Choose two from Arcana, Insight, Investigation, Persuasion, and Religion
-	</ul>
-	<h4>Equipment</h4>
-	<ul>
-		<p class=h4Sub>
-			You start with the following equipment, in addition to the equipment granted by your background:
-		</p>
-		<li/>(a) a spear or (b) a short sword (if proficient)
-		<li/>(a) scale mail or (b) leather armor
-		<li/>(a) a shortbow and 20 bolts or (b) any simple weapon
-		<li/>(a) a shaman's focus or (b) a holy symbol
-		<li/>A priest's pack
-	</ul>
+    <ul>
+        <li/>Hit Points
+        <li/>Hit Dice: 1d8 per Medium level
+        <li/>Hit Points at 1st Level: 8 + your Constitution modifier
+        <li/>Hit Points at Higher Levels: 1d8 (or 5) + your Constitution modifier per Medium level after 1st
+    </ul>
+    <h4>Proficiencies</h4>
+    <ul>
+        <li/>Armor: Light armor, Medium armor
+        <li/>Weapons: All simple weapons, One martial weapon of 1d6 damage or less
+        <li/>Tools: None
+        <li/>Saving Throws: Wisdom, Constitution
+        <li/>Skills: Choose two from Arcana, Insight, Investigation, Persuasion, and Religion
+    </ul>
+    <h4>Equipment</h4>
+    <ul>
+        <p class=h4Sub>
+            You start with the following equipment, in addition to the equipment granted by your background:
+        </p>
+        <li/>(a) a spear or (b) a short sword (if proficient)
+        <li/>(a) scale mail or (b) leather armor
+        <li/>(a) a shortbow and 20 bolts or (b) any simple weapon
+        <li/>(a) a shaman's focus or (b) a holy symbol
+        <li/>A priest's pack
+    </ul>
 </div>
 <h3>Spellcasting</h3>
 <p>Your expertise in the supernatural has driven you to learn to cast spells. See the <a href="Medium_spells.html">Medium Spell List</a>.</p>
@@ -149,55 +150,55 @@
 
 <h3>Spiritual Discipline</h3>
 <p>
-	At 1st level, you choose a <a href="Medium_subclasses.html">spiritual discipline</a>, shaping your practice of magic through one of three professions: the Exorcist, the Shaman or the Sha'ir.
+    At 1st level, you choose a <a href="Medium_subclasses.html">spiritual discipline</a>, shaping your practice of magic through one of three professions: the Exorcist, the Shaman or the Sha'ir.
 </p>
 <p>
-	Your choice grants you features at 1nd level and again at 6th, 10th, and 14th level.
+    Your choice grants you features at 1nd level and again at 6th, 10th, and 14th level.
 </p>
 
 
 <h3>Taboo</h3>
 
 <div class=sidebar>
-	<h3 id="Sidebar: Taboo who?">Taboo who?</h3>
-	<div class=sbBody>
-		<p>Taboos are certain actions that have been deemed forbidden. A taboo should restrict something not uncommon but not be hard to maintian. Generaly a spirit will tell you wheather you can safely take an action. Here are some examples:</p>
-		<ul>
-			<li/>Like a druid, you must not wear metal armor or use metal shields.
-			<li/>You must adopt a code of honor. You must accept any challenge made against you, and you cannot use underhanded tactics such as attacking an unwary foe that is not already in combat against you or your allies.
-			<li/>You cannot eat meat, kill beasts, or touch domesticated animals.
-			<li/>You must dress in clean and proper clothes, maintain ettiquite and avoid getting your shoes and clothes dirty. You must not walk if transportation is avaliable.
-			<li/>You cannot speak common or do anything that is too "mainstream".
-		</ul>
-	</div>
+    <h3 id="Sidebar: Taboo who?">Taboo who?</h3>
+    <div class=sbBody>
+        <p>Taboos are certain actions that have been deemed forbidden. A taboo should restrict something not uncommon but not be hard to maintian. Generaly a spirit will tell you wheather you can safely take an action. Here are some examples:</p>
+        <ul>
+            <li/>Like a druid, you must not wear metal armor or use metal shields.
+            <li/>You must adopt a code of honor. You must accept any challenge made against you, and you cannot use underhanded tactics such as attacking an unwary foe that is not already in combat against you or your allies.
+            <li/>You cannot eat meat, kill beasts, or touch domesticated animals.
+            <li/>You must dress in clean and proper clothes, maintain ettiquite and avoid getting your shoes and clothes dirty. You must not walk if transportation is avaliable.
+            <li/>You cannot speak common or do anything that is too "mainstream".
+        </ul>
+    </div>
 </div>
 
 <p>At 2nd level, you can take on a taboo befitting the spirit you are currently channeling in order to earn greater cooperation. The taboo must be maintained until you complete a long rest. If you break this taboo, your remaining channeling time immediately runs out and you take 1d12 necrotic damage + the spirit’s CR. When you take on a taboo, you gain one of the following abilities:
-	<ul>
-		<li/>You gain an aditional spell slot according to the spell level column on the Medium table. This extra spell slot is lost when your taboo ends or is broken.
-		<li/>You gain your proficiency bonus on all ability checks with one of the spirit’s exemplary ability scores. This refers to either the spirit’s greatest ability score, or one that is greater than your own.
-		<li/>
-	</ul>
+    <ul>
+        <li/>You gain an aditional spell slot according to the spell level column on the Medium table. This extra spell slot is lost when your taboo ends or is broken.
+        <li/>You gain your proficiency bonus on all ability checks with one of the spirit’s exemplary ability scores. This refers to either the spirit’s greatest ability score, or one that is greater than your own.
+        <li/>
+    </ul>
 </p>
 <p>
-	<!-- You can take on a taboo a number of times per long rest equal to your wisdom modifier or your proficiency bonus (whichever is smaller). -->
-	You can take on a taboo once per short rest.
+    <!-- You can take on a taboo a number of times per long rest equal to your wisdom modifier or your proficiency bonus (whichever is smaller). -->
+    You can take on a taboo once per short rest.
 </p>
 
 <h3>The Third Eye</h3>
 <p>
-	Starting at 3rd level, you can use an action to open your third eye, and know if there are any creatures within 60 feet of you. You know if any are within your repertoire, if any are undead, and you know if any are the same type of creature as you. Your third eye remains open for 10 minutes, and it can be used a number of times equal to your proficiency bonus. All expended uses are restored when you finish a long rest.
+    Starting at 3rd level, you can use an action to open your third eye, and know if there are any creatures within 60 feet of you. You know if any are within your repertoire, if any are undead, and you know if any are the same type of creature as you. Your third eye remains open for 10 minutes, and it can be used a number of times equal to your proficiency bonus. All expended uses are restored when you finish a long rest.
 </p>
 
 <h3>Rites of Mediation</h3>
 <p>
-	In your study of occult lore, you have enacted sacred <a href="Medium_rites.html">rites</a>, and become aware of planes of existence not known to mortal eyes.
+    In your study of occult lore, you have enacted sacred <a href="Medium_rites.html">rites</a>, and become aware of planes of existence not known to mortal eyes.
 
-	At 3rd level, you enact one rite of your choice, gaining its stated effects permanently. When you gain certain Medium levels, you can enact rites of your choice, as shown in the Rites Enacted column of the Medium table.
-	
-	Additionally, when you gain a level in this class, you can choose one of the rites you have enacted and replace it with another rite that you could gain at that level.
-	
-	If a rite has prerequisites, you must meet them to enact it. You can enact the rite at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.
+    At 3rd level, you enact one rite of your choice, gaining its stated effects permanently. When you gain certain Medium levels, you can enact rites of your choice, as shown in the Rites Enacted column of the Medium table.
+    
+    Additionally, when you gain a level in this class, you can choose one of the rites you have enacted and replace it with another rite that you could gain at that level.
+    
+    If a rite has prerequisites, you must meet them to enact it. You can enact the rite at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.
 </p>
 
 <h1>On Spirits</h1>
@@ -207,7 +208,7 @@
 <h3>How do I get Spirits to Follow Me?</h3>
 <p>You learn to appease spirits and barter with supernatural forces. In order to use the channeling ability, you must first gain the aid of a spirit.
 </p>
-<p>	Finding a spirit is no simple task. Though many spirits reside on the mortal realm, you can’t expect to find them behind every tree and rock (The spirit of your average tree won’t be of any use). Often you will require elaborate and expensive rites to contact beings from other planes. But sometimes, a Medium need only ask around.
+<p>    Finding a spirit is no simple task. Though many spirits reside on the mortal realm, you can’t expect to find them behind every tree and rock (The spirit of your average tree won’t be of any use). Often you will require elaborate and expensive rites to contact beings from other planes. But sometimes, a Medium need only ask around.
 </p>
 <p>Communing with faraway Spirits. To contact a spirit of nature, or a soul that is yet to pass, you must make an offering. This ritual takes (1d12 + the target’s CR) × 10 minutes to complete. It is unusual to need an offering worth much more than the target’s CR × 100 gp. A spirit must be summoned from a place relevant to its nature. This can be where it had passed away or somewhere close to its remains (if applicable), the domain in which it resides or the place it still haunts. It can also be in the presence of a person it knows well or an item that is significant to it. Stronger ties, yield stronger results.
 </p>
@@ -222,99 +223,97 @@
 <p>To quickly create a spirit, you need a list of 3-6 skills, some weapon proficiencies and choose 1-3 of its ability scores that excels at or is higher than its other scores. There are sample sets of these below. If the being channeled is a spirit of nature or has levels in a spellcasting class, it should provide between 2-9 spells. You can simply borrow the spells of a cleric domain or a warlock patron, make your own list, or use one of the sample spell lists below. To make a spirit less useful, leave out spells over a certain level. Sample sets for skills and abilities are listed after.
 </p>
 <table class=smapleSpirits>
-	<thead>
-		<tr/> <th colspan=4 />Sample Spirit Spells
-		<tr/> <th class=slimCell />Spell Level
-			<th />Air and Wind theme
-			<th />Water and Cold theme
-			<th />Lightning, Thunder and Paralysis theme
-	</thead>
-	<tbody>
-		<tr/> <th/>Cantrips <td/>Gust <td/>Shape Water <td/>Shocking Grasp
-		<tr/> <th/>1st <td/>Zephyr Strike <td/>Create or Destroy Water <td/>Guiding Bolt
-		<tr/> <th/>2rd <td/>Warding Wind <td/>Invisibility <td/>Shatter
-		<tr/> <th/>3rd <td/>Wind Wall <td/>Water Breathing <td/>Lightning Bolt
-		<tr/> <th/>4th <td/>Storm Sphere <td/>Control Water <td/>Staggering Smite
-		<tr/> <th/>5th <td/>Control Winds <td/>Maelstrom <td/>Far Step
-		<tr/> <th/>6th <td/>Investiture of Wind <td/>Wall of Ice <td/>Chain Lightning
-		<tr/> <th/>7th <td/>Whirlwind <td/>Prismatic Spray <td/>Power Word Pain
-	</tbody>
-	<thead>
-		<tr/> <th colspan=4 />
-		<tr/> <th/>Spell Level
-			<th/>Flame theme
-			<th/>Rock and Stone theme
-			<th/>Volcanic Chemistry theme
-	</thead>
-		<tr/> <th/>Cantrips <td/>Create Bonfire <td/>Mold earth <td/>Acid Splash
-		<tr/> <th/>1st <td/>Burning Hands <td/>Earth Tremor  <td/>Fog Cloud
-		<tr/> <th/>2rd <td/>Flaming Sphere <td/>Maximilian's Earthen Grasp <td/>Pyrotechnics
-		<tr/> <th/>3rd <td/>Melf's Minute Meteors <td/>Erupting Earth <td/>Stinking Cloud
-		<tr/> <th/>4th <td/>Wall of Fire <td/>Stone Shape <td/>Vitriolic Sphere
-		<tr/> <th/>5th <td/>Immolation <td/>Transmute Rock <td/>Cloudkill
-		<tr/> <th/>6th <td/>Investiture of Flame <td/>Move Earth <td/>Flesh to Stone
-		<tr/> <th/>7th <td/>Fire Storm <td/>Reverse Gravity <td/>Delayed Blast Fireball
-	</tbody>
+    <thead>
+        <tr/> <th colspan=4 />Sample Spirit Spells
+        <tr/> <th class=slimCell />Spell Level
+            <th />Air and Wind theme
+            <th />Water and Cold theme
+            <th />Lightning, Thunder and Paralysis theme
+    </thead>
+    <tbody>
+        <tr/> <th/>Cantrips <td/>Gust <td/>Shape Water <td/>Shocking Grasp
+        <tr/> <th/>1st <td/>Zephyr Strike <td/>Create or Destroy Water <td/>Guiding Bolt
+        <tr/> <th/>2rd <td/>Warding Wind <td/>Invisibility <td/>Shatter
+        <tr/> <th/>3rd <td/>Wind Wall <td/>Water Breathing <td/>Lightning Bolt
+        <tr/> <th/>4th <td/>Storm Sphere <td/>Control Water <td/>Staggering Smite
+        <tr/> <th/>5th <td/>Control Winds <td/>Maelstrom <td/>Far Step
+        <tr/> <th/>6th <td/>Investiture of Wind <td/>Wall of Ice <td/>Chain Lightning
+        <tr/> <th/>7th <td/>Whirlwind <td/>Prismatic Spray <td/>Power Word Pain
+    </tbody>
+    <thead>
+        <tr/> <th colspan=4 />
+        <tr/> <th/>Spell Level
+            <th/>Flame theme
+            <th/>Rock and Stone theme
+            <th/>Volcanic Chemistry theme
+    </thead>
+        <tr/> <th/>Cantrips <td/>Create Bonfire <td/>Mold earth <td/>Acid Splash
+        <tr/> <th/>1st <td/>Burning Hands <td/>Earth Tremor  <td/>Fog Cloud
+        <tr/> <th/>2rd <td/>Flaming Sphere <td/>Maximilian's Earthen Grasp <td/>Pyrotechnics
+        <tr/> <th/>3rd <td/>Melf's Minute Meteors <td/>Erupting Earth <td/>Stinking Cloud
+        <tr/> <th/>4th <td/>Wall of Fire <td/>Stone Shape <td/>Vitriolic Sphere
+        <tr/> <th/>5th <td/>Immolation <td/>Transmute Rock <td/>Cloudkill
+        <tr/> <th/>6th <td/>Investiture of Flame <td/>Move Earth <td/>Flesh to Stone
+        <tr/> <th/>7th <td/>Fire Storm <td/>Reverse Gravity <td/>Delayed Blast Fireball
+    </tbody>
 </table>
 
 <h3>Sample Skill and Ability Sets</h3>
 <div class="smapleSpirits hiddenList">
-	<ul>
-		<li/><h5>Old Scholar/Wizard</h5>
-		<li/><strong>Abilities</strong> Intelligence, Wisdom
-		<li/><strong>Skills</strong> Arcana, History, Investigation, Nature
-	</ul>
-	<ul>
-		<li/><h5>Ghost of a Soldier/Wolf Spirit</h5>
-		<li/><strong>Abilities</strong> Strength, Dexterity
-		<li/><strong>Skills</strong> Athletics, Intimidation, Survival
-	</ul>
-	<ul>
-		<li/><h5>Ghostly Serpent/Failed Assassin</h5>
-		<li/><strong>Abilities</strong> Dexterity, Charisma
-		<li/><strong>Skills</strong> Acrobatics, Deception, Insight, Intimidation
-	</ul>
-	<ul>
-		<li/><h5>Ghost of a Wayward Bard</h5>
-		<li/><strong>Abilities</strong> Constitution, Charisma
-		<li/><strong>Skills</strong> History, Performance, Religion, Survival
-	</ul>
-	<ul>
-		<li/><h5>Spiteful Ghost/Soul of  a Cutpurse</h5>
-		<li/><strong>Abilities</strong> Dexterity, Intelligence
-		<li/><strong>Skills</strong> Deception, Insight, Persuasion, Sleight of Hand
-	</ul>
-	<ul>
-		<li/><h5>Mountain Protector/Forest Lord</h5>
-		<li/><strong>Abilities</strong> Constitution, Wisdom
-		<li/><strong>Skills</strong> Animal Handling, Insight, Perception, Stealth
-	</ul>
-	<ul>
-		<li/><h5>Pond Spirit/Spring Maiden</h5>
-		<li/><strong>Abilities</strong> Intelligence, Wisdom, Charisma
-		<li/><strong>Skills</strong> History, Medicine, Nature
-	</ul>
-	<ul>
-		<li/><h5>Lesser Muse</h5>
-		<li/><strong>Abilities</strong> Intelligence, Charisma
-		<li/><strong>Skills</strong> History, Nature, Performance, Persuasion, Religion
-	</ul>
-	<ul>
-		<li/><h5>Anga'zoot, Lord of Fire Mephits</h5>
-		<li/><strong>Abilities</strong> Dexterity
-		<li/><strong>Skills</strong> Arcana, Deception, Stealth
-	</ul>
-	<ul>
-		<li/><h5>Geyser Spirit</h5>
-		<li/><strong>Abilities</strong> Strength, Charisma
-		<li/><strong>Skills</strong> Athletics, History, Intimidation, Stealth
-	</ul>
+    <ul>
+        <li/><h5>Old Scholar/Wizard</h5>
+        <li/><strong>Abilities</strong> Intelligence, Wisdom
+        <li/><strong>Skills</strong> Arcana, History, Investigation, Nature
+    </ul>
+    <ul>
+        <li/><h5>Ghost of a Soldier/Wolf Spirit</h5>
+        <li/><strong>Abilities</strong> Strength, Dexterity
+        <li/><strong>Skills</strong> Athletics, Intimidation, Survival
+    </ul>
+    <ul>
+        <li/><h5>Ghostly Serpent/Failed Assassin</h5>
+        <li/><strong>Abilities</strong> Dexterity, Charisma
+        <li/><strong>Skills</strong> Acrobatics, Deception, Insight, Intimidation
+    </ul>
+    <ul>
+        <li/><h5>Ghost of a Wayward Bard</h5>
+        <li/><strong>Abilities</strong> Constitution, Charisma
+        <li/><strong>Skills</strong> History, Performance, Religion, Survival
+    </ul>
+    <ul>
+        <li/><h5>Spiteful Ghost/Soul of  a Cutpurse</h5>
+        <li/><strong>Abilities</strong> Dexterity, Intelligence
+        <li/><strong>Skills</strong> Deception, Insight, Persuasion, Sleight of Hand
+    </ul>
+    <ul>
+        <li/><h5>Mountain Protector/Forest Lord</h5>
+        <li/><strong>Abilities</strong> Constitution, Wisdom
+        <li/><strong>Skills</strong> Animal Handling, Insight, Perception, Stealth
+    </ul>
+    <ul>
+        <li/><h5>Pond Spirit/Spring Maiden</h5>
+        <li/><strong>Abilities</strong> Intelligence, Wisdom, Charisma
+        <li/><strong>Skills</strong> History, Medicine, Nature
+    </ul>
+    <ul>
+        <li/><h5>Lesser Muse</h5>
+        <li/><strong>Abilities</strong> Intelligence, Charisma
+        <li/><strong>Skills</strong> History, Nature, Performance, Persuasion, Religion
+    </ul>
+    <ul>
+        <li/><h5>Anga'zoot, Lord of Fire Mephits</h5>
+        <li/><strong>Abilities</strong> Dexterity
+        <li/><strong>Skills</strong> Arcana, Deception, Stealth
+    </ul>
+    <ul>
+        <li/><h5>Geyser Spirit</h5>
+        <li/><strong>Abilities</strong> Strength, Charisma
+        <li/><strong>Skills</strong> Athletics, History, Intimidation, Stealth
+    </ul>
 
 </div>
 
 </div>
-<script src= "script.js" >
-	$( "#menus" ).load( "panels.html #panels" );
-</script>
+<script src= "script.js" > </script>
 </body>
 </html>

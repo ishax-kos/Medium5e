@@ -3,8 +3,6 @@ function adjust() {
 	var size = document.querySelector(".page").clientWidth;
 		size = (window.innerWidth - size)/2;
 	
-	//document.querySelector(".title").innerHTML = size;
-	
 	var vis = "visible";
 	
 	if (size < 200) {
@@ -22,6 +20,8 @@ function adjust() {
 		);
 	}
 } adjust();
+
+$("#menus").load("menus.html #load");
 
 var headings = document.querySelectorAll("h1,h2,h3,h4");
 var navList = document.getElementById("navList");
