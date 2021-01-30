@@ -23,7 +23,7 @@ function adjust() {
 
 
 var headings = document.querySelectorAll("h1,h2,h3,h4");
-var navList = document.getElementById("navList");
+var navList = document.querySelector(".menuChapter");
 var n = "";
 for (i = 0; i < headings.length; i++) {
 	if (headings[i].id == "") {
