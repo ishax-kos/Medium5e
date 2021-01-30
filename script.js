@@ -21,7 +21,6 @@ function adjust() {
 	}
 } adjust();
 
-$("#menus").load("menus.html #load");
 
 var headings = document.querySelectorAll("h1,h2,h3,h4");
 var navList = document.getElementById("navList");
