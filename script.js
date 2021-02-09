@@ -21,22 +21,22 @@ function adjust() {
 	}
 } adjust();
 
-function load() {
-	var headings = document.querySelectorAll("h1,h2,h3,h4");
-	var navList = document.querySelector("#navList");
-	var n = "";
-	for (i = 0; i < headings.length; i++) {
-		if (headings[i].id == "") {
-			n = headings[i].innerHTML;
-			headings[i].id = "r"+i;
-		} else {
-			n = headings[i].id
-		}
-		if (headings[i].className != "nullMenu") {
-			navList.innerHTML += "<a href=\"#"+ headings[i].id +"\"><"+ headings[i].tagName +">"+
-			n 
-			+"</"+ headings[i].tagName +"></a>";
-		}
+// function load() {
+var headings = document.querySelectorAll("h1,h2,h3,h4");
+var navList = document.querySelector("#navList");
+var n = "";
+for (i = 0; i < headings.length; i++) {
+	if (headings[i].id == "") {
+		n = headings[i].innerHTML;
+		headings[i].id = "r"+i;
+	} else {
+		n = headings[i].id
 	}
-} load();
+	if (headings[i].className != "nullMenu") {
+		navList.innerHTML += "<a href=\"#"+ headings[i].id +"\"><"+ headings[i].tagName +">"+
+		n 
+		+"</"+ headings[i].tagName +"></a>";
+	}
+}
+// } load();
 
