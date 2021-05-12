@@ -185,16 +185,16 @@ h4 {
 
 
 
-div.smapleSpirits {
+div.sampleSpirits {
 	column-count: 2;
 	column-gap: 0pc;
 	margin-top:	6pt;
 	margin-left: 2pc;
-} div.smapleSpirits h5 {
+} div.sampleSpirits h5 {
 	color: #847750;
 	font-size:	12pt;
 	font-weight: bolder;
-} div.smapleSpirits ul,li {
+} div.sampleSpirits ul,li {
 	text-indent: 0;
 	margin-top:	0;
 } 
